@@ -1,0 +1,46 @@
+{
+  "name": "shadcn-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for shadcn/ui components",
+  "main": "dist/index.js",
+  "bin": {
+    "shadcn-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mcp", "shadcn", "ui", "components", "server", "ai", "assistant"],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krutikkkkkkkkk/shadcn-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krutikkkkkkkkk/shadcn-mcp-server/issues"
+  },
+  "homepage": "https://github.com/krutikkkkkkkkk/shadcn-mcp-server#readme",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "@types/node": "^24.2.0",
+    "node-fetch": "^3.3.2",
+    "tsx": "^4.20.3",
+    "zod": "^3.25.76"
+  }
+}

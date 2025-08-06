@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "shadcn-mcp-server": {
+      "type": "stdio",
+      "command": "npm",
+      "args": ["run", "dev"]
+    }
+  }
+}
